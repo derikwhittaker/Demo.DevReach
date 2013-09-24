@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Home Page";  
+}
+
+@section scripts
+{
+    <script src="~/ViewModels/MainViewModel.js"></script>
+
+    <script type="text/javascript">
+        (function() {
+            var vm = new TypeDefinitions.MainViewModel();
+
+            var element = $("#demo-documentBody")[0];
+            ko.applyBindings(vm, element);
+        })();
+    </script>    
+
+}
+
+<div class="hero-unit">
+    <h1>Learning Typescript</h1>
+</div>
+<div class="row">
+    <div id="demo-documentBody" class="span12">
+        <h2>ToDo Items</h2>
+        <table class="table table-striped" >
+            <tbody data-bind="foreach: Items">
+                <tr>
+                    <td data-bind="text: Name"></td>
+                    <td data-bind="text: Description"></td>
+                </tr>
+            </tbody>
+ 
+        </table>
+    </div>
+
+</div>
