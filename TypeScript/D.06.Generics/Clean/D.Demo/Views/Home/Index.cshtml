@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";  
+}
+
+@section scripts
+{
+    <script src="~/ViewModels/MainViewModel.js"></script>
+
+    <script type="text/javascript">
+        var viewModel = new DevReach.MainViewModel();
+
+        var element = $('#demo-documentBody')[0];
+
+        ko.applyBindings(viewModel, element);
+    </script>    
+
+}
+
+<div class="hero-unit">
+    <h1>Learning Typescript</h1>
+</div>
+<div class="row">
+    <div id="demo-documentBody" class="span12">
+           
+        <input type="button" value="Run Demo" data-bind="click: run" />
+    </div>
+</div>

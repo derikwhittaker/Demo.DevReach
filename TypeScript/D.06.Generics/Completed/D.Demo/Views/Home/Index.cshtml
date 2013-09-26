@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";  
+}
+
+@section scripts
+{
+    <script src="~/ViewModels/MainViewModel.js"></script>
+
+    <script type="text/javascript">
+        var viewModel = new DevReach.MainViewModel();
+
+        var element = $('#demo-documentBody')[0];
+
+        ko.applyBindings(viewModel, element);
+    </script>    
+
+}
+
+<div class="hero-unit">
+    <h1>Learning Typescript</h1>
+</div>
+<div class="row">
+    <div id="demo-documentBody" class="span12">
+        Select a Speaker Type:
+        <div style="margin-top: 10px"><input type="radio" data-bind="value: DevReach.Speakers.Dog, checked: SpeakerType" />  Dog</div>
+        <div style="margin-top: 10px"><input type="radio" data-bind="value: DevReach.Speakers.Wolf, checked: SpeakerType" />  Wolf</div>
+        <div style="margin-top: 10px"><input type="radio" data-bind="value: DevReach.Speakers.Dolphin, checked: SpeakerType" />  Dolphin</div>
+        <div style="margin-top: 10px"><input type="radio" data-bind="value: DevReach.Speakers.Bird, checked: SpeakerType" />  Bird</div>
+
+        <br />        
+        <input type="button" value="Run Demo" data-bind="click: run" />
+    </div>
+</div>

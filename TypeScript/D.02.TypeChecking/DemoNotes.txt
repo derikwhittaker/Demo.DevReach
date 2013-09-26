@@ -1,0 +1,12 @@
+1) Handle Script Initial Code
+           var mammal = new Mammal("Dog");
+            mammal.walk("22");
+
+
+Steps class
+    export class Steps{
+        public Steps: number = 0;
+        constructor(steps) {
+            this.Steps = steps;
+        }
+    }

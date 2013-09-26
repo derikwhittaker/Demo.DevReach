@@ -1,0 +1,13 @@
+1) Original Filter syntax
+           var filtered = _.filter(this.Items(), function (item) {
+                return item.Name() == "Item 2";
+            });
+
+            this.FilteredItems(filtered);
+
+2) Updated filter syntax
+            var filtered = _.filter(this.Items(), (item: ToDoItem) => {
+                return item.Name() == "Item 3";
+            });
+
+            this.FilteredItems(filtered);

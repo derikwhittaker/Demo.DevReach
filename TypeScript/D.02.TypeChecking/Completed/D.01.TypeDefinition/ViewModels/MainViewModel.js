@@ -3,26 +3,36 @@ var TypeDefinitions;
 (function (TypeDefinitions) {
     var MainViewModel = (function () {
         function MainViewModel() {
-            this.Items = ko.observableArray([]);
-            this.Items.push(new ToDoItem("Item 1", "Description 1"));
-            this.Items.push(new ToDoItem("Item 2", "Description 2"));
-            this.Items.push(new ToDoItem("Item 3", "Description 3"));
-            this.Items.push(new ToDoItem("Item 4", "Description 4"));
-            this.Items.push(new ToDoItem("Item 5", "Description 5"));
-            this.Items.push(new ToDoItem("Item 6", "Description 6"));
         }
+        MainViewModel.prototype.createMammal = function () {
+            return new Mammal("dog");
+        };
+
+        MainViewModel.prototype.handleClick = function () {
+            var mammal = new Mammal("Dog");
+            mammal.walk(new Steps(23));
+        };
         return MainViewModel;
     })();
     TypeDefinitions.MainViewModel = MainViewModel;
-
-    var ToDoItem = (function () {
-        function ToDoItem(name, description) {
-            this.Name = ko.observable("");
-            this.Description = ko.observable("");
-            this.Name(name);
-            this.Description(description);
+    var Mammal = (function () {
+        function Mammal(type) {
+            this.mammalType = "";
+            this.mammalType = type;
         }
-        return ToDoItem;
+        Mammal.prototype.walk = function (steps) {
+            console.log("Walking the " + this.mammalType + " " + steps.Steps + " steps");
+        };
+        return Mammal;
     })();
-    TypeDefinitions.ToDoItem = ToDoItem;
+    TypeDefinitions.Mammal = Mammal;
+
+    var Steps = (function () {
+        function Steps(steps) {
+            this.Steps = 0;
+            this.Steps = steps;
+        }
+        return Steps;
+    })();
+    TypeDefinitions.Steps = Steps;
 })(TypeDefinitions || (TypeDefinitions = {}));
