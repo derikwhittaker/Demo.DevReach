@@ -1,0 +1,194 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61307A7D8F87034483C4E4D439EC7B93/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61307A7D8F87034483C4E4D439EC7B93/Shortcut/@EntryValue">WebApi.Actions.GetWithConvention</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61307A7D8F87034483C4E4D439EC7B93/Text/@EntryValue">        public string GetStatus()&#xD;
+        {&#xD;
+            return "Your Awesome";&#xD;
+        }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61307A7D8F87034483C4E4D439EC7B93/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61307A7D8F87034483C4E4D439EC7B93/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61307A7D8F87034483C4E4D439EC7B93/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61307A7D8F87034483C4E4D439EC7B93/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61307A7D8F87034483C4E4D439EC7B93/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61307A7D8F87034483C4E4D439EC7B93/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AD31D48CBB31FE4FB8C26AEC9E9582B2/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AD31D48CBB31FE4FB8C26AEC9E9582B2/Shortcut/@EntryValue">WebApi.Actions.GetWithConventions_Argument</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AD31D48CBB31FE4FB8C26AEC9E9582B2/Text/@EntryValue">&#xD;
+        public string GetStatus(string status)&#xD;
+        {&#xD;
+            return string.Format("Status of {0} was provided", status);&#xD;
+&#xD;
+        }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AD31D48CBB31FE4FB8C26AEC9E9582B2/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AD31D48CBB31FE4FB8C26AEC9E9582B2/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AD31D48CBB31FE4FB8C26AEC9E9582B2/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AD31D48CBB31FE4FB8C26AEC9E9582B2/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AD31D48CBB31FE4FB8C26AEC9E9582B2/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AD31D48CBB31FE4FB8C26AEC9E9582B2/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3E5E308FC61C0842B8BD83F6E871D6D3/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3E5E308FC61C0842B8BD83F6E871D6D3/Shortcut/@EntryValue">WebApi.Actions.PostWithConvention</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3E5E308FC61C0842B8BD83F6E871D6D3/Text/@EntryValue">        public string PostStatus(string status)&#xD;
+        {&#xD;
+            return string.Format("Status of {0} was posted", status);&#xD;
+        }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3E5E308FC61C0842B8BD83F6E871D6D3/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3E5E308FC61C0842B8BD83F6E871D6D3/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3E5E308FC61C0842B8BD83F6E871D6D3/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3E5E308FC61C0842B8BD83F6E871D6D3/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3E5E308FC61C0842B8BD83F6E871D6D3/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3E5E308FC61C0842B8BD83F6E871D6D3/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4B4EFE1D6D34D141997B7990823D4ECB/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4B4EFE1D6D34D141997B7990823D4ECB/Shortcut/@EntryValue">WebApi.Actions.PutAndDeleteWithConvention</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4B4EFE1D6D34D141997B7990823D4ECB/Text/@EntryValue">        public string PutStatus(string status)&#xD;
+        {&#xD;
+            return string.Format("Status of {0} was Put", status);&#xD;
+        }&#xD;
+&#xD;
+        public string DeleteStatus(string status)&#xD;
+        {&#xD;
+            return string.Format("Status of {0} was Delete", status);&#xD;
+        }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4B4EFE1D6D34D141997B7990823D4ECB/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4B4EFE1D6D34D141997B7990823D4ECB/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4B4EFE1D6D34D141997B7990823D4ECB/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4B4EFE1D6D34D141997B7990823D4ECB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4B4EFE1D6D34D141997B7990823D4ECB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=4B4EFE1D6D34D141997B7990823D4ECB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A08E2119E28BA64781C4A9F4A4AFCCBB/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A08E2119E28BA64781C4A9F4A4AFCCBB/Shortcut/@EntryValue">WebApi.Filters.CreateFilter</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A08E2119E28BA64781C4A9F4A4AFCCBB/Text/@EntryValue">    public class DemoActionFilter : ActionFilterAttribute&#xD;
+    {&#xD;
+        public override void OnActionExecuting(System.Web.Http.Controllers.HttpActionContext actionContext)&#xD;
+        {&#xD;
+            Debug.WriteLine("Request: Type {0} Route {1}",&#xD;
+                    actionContext.Request.Method, actionContext.Request.RequestUri);&#xD;
+        }&#xD;
+&#xD;
+        public override void OnActionExecuted(HttpActionExecutedContext actionExecutedContext)&#xD;
+        {&#xD;
+            base.OnActionExecuted(actionExecutedContext);&#xD;
+        }&#xD;
+    }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A08E2119E28BA64781C4A9F4A4AFCCBB/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A08E2119E28BA64781C4A9F4A4AFCCBB/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A08E2119E28BA64781C4A9F4A4AFCCBB/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A08E2119E28BA64781C4A9F4A4AFCCBB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A08E2119E28BA64781C4A9F4A4AFCCBB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A08E2119E28BA64781C4A9F4A4AFCCBB/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=55B739A93E4D474BA7BDA2F975826832/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=55B739A93E4D474BA7BDA2F975826832/Shortcut/@EntryValue">WebApi.IISHost.AwesomeController_Init</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=55B739A93E4D474BA7BDA2F975826832/Text/@EntryValue">    public class AwesomeController : ApiController&#xD;
+    {&#xD;
+        public string GetStatus()&#xD;
+        {&#xD;
+            return "Your Awesome";&#xD;
+        }&#xD;
+    }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=55B739A93E4D474BA7BDA2F975826832/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=55B739A93E4D474BA7BDA2F975826832/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=55B739A93E4D474BA7BDA2F975826832/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=55B739A93E4D474BA7BDA2F975826832/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=55B739A93E4D474BA7BDA2F975826832/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=55B739A93E4D474BA7BDA2F975826832/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7C1ECCDD104C7F4CAD8DBF2C6901D8E3/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7C1ECCDD104C7F4CAD8DBF2C6901D8E3/Shortcut/@EntryValue">WebApi.ModelBinding.NormalBinder</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7C1ECCDD104C7F4CAD8DBF2C6901D8E3/Text/@EntryValue">        [HttpPost]&#xD;
+        public string ModelBinding(Person person)&#xD;
+        {&#xD;
+            return string.Format("From Model Biding -- {0} {1}", person.FirstName, person.LastName);&#xD;
+        }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7C1ECCDD104C7F4CAD8DBF2C6901D8E3/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7C1ECCDD104C7F4CAD8DBF2C6901D8E3/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7C1ECCDD104C7F4CAD8DBF2C6901D8E3/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7C1ECCDD104C7F4CAD8DBF2C6901D8E3/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7C1ECCDD104C7F4CAD8DBF2C6901D8E3/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7C1ECCDD104C7F4CAD8DBF2C6901D8E3/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6F86EC34A1DB541A8F2278DB925F15B/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6F86EC34A1DB541A8F2278DB925F15B/Shortcut/@EntryValue">WebApi.ModelBinding.Overbinding</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6F86EC34A1DB541A8F2278DB925F15B/Text/@EntryValue">        [HttpPost]&#xD;
+        public string OverModelBinding(Person person)&#xD;
+        {&#xD;
+            return string.Format("From Overbinding -- {0} {1}", person.FirstName, person.LastName);&#xD;
+        }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6F86EC34A1DB541A8F2278DB925F15B/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6F86EC34A1DB541A8F2278DB925F15B/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6F86EC34A1DB541A8F2278DB925F15B/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6F86EC34A1DB541A8F2278DB925F15B/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6F86EC34A1DB541A8F2278DB925F15B/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A6F86EC34A1DB541A8F2278DB925F15B/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BF6F23F6DE710C45AC1C21BA7F84FA19/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BF6F23F6DE710C45AC1C21BA7F84FA19/Shortcut/@EntryValue">WebApi.ModelBinding.ValidationBinding</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BF6F23F6DE710C45AC1C21BA7F84FA19/Text/@EntryValue">        [HttpPost]&#xD;
+        public string ValidationModelBinding(Person person)&#xD;
+        {&#xD;
+            var isValid = ModelState.IsValid;&#xD;
+&#xD;
+            return string.Format("From Validation Binding -- {0} {1}", person.FirstName, person.LastName);&#xD;
+        }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BF6F23F6DE710C45AC1C21BA7F84FA19/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BF6F23F6DE710C45AC1C21BA7F84FA19/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BF6F23F6DE710C45AC1C21BA7F84FA19/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BF6F23F6DE710C45AC1C21BA7F84FA19/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BF6F23F6DE710C45AC1C21BA7F84FA19/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BF6F23F6DE710C45AC1C21BA7F84FA19/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7908AE9F04581468B14A8962FAE1DD3/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7908AE9F04581468B14A8962FAE1DD3/Shortcut/@EntryValue">WebApi.SelfHost.AwesomeController_Init</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7908AE9F04581468B14A8962FAE1DD3/Text/@EntryValue">    public class AwesomeController : ApiController&#xD;
+    {&#xD;
+        public string GetStatus()&#xD;
+        {&#xD;
+            return "Your Awesome";&#xD;
+        }&#xD;
+    }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7908AE9F04581468B14A8962FAE1DD3/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7908AE9F04581468B14A8962FAE1DD3/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7908AE9F04581468B14A8962FAE1DD3/Categories/=Demo_002EWebApi/@EntryIndexedValue">Demo.WebApi</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7908AE9F04581468B14A8962FAE1DD3/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7908AE9F04581468B14A8962FAE1DD3/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7908AE9F04581468B14A8962FAE1DD3/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=A7908AE9F04581468B14A8962FAE1DD3/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=356CE5547175F94EB86E873B10C1F1C2/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=356CE5547175F94EB86E873B10C1F1C2/Shortcut/@EntryValue">WebApi.SelfHost.CreateRuntime</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=356CE5547175F94EB86E873B10C1F1C2/Description/@EntryValue">Will Create the runtime for the self hosted web api</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=356CE5547175F94EB86E873B10C1F1C2/Text/@EntryValue">    public class SelfHostRuntime&#xD;
+    {&#xD;
+        public void Host()&#xD;
+        {&#xD;
+            var config = new HttpSelfHostConfiguration("http://localhost:8888");&#xD;
+            ConfigureRoutes(config);&#xD;
+&#xD;
+            using (var server = new HttpSelfHostServer(config))&#xD;
+            {&#xD;
+                Console.WriteLine("Starting Web Api Host");&#xD;
+                Console.WriteLine("Listening @ {0}", config.BaseAddress);&#xD;
+                server.OpenAsync().Wait();&#xD;
+&#xD;
+                Console.ReadLine();&#xD;
+            }&#xD;
+        }&#xD;
+&#xD;
+        private void ConfigureRoutes(HttpSelfHostConfiguration configuration)&#xD;
+        {&#xD;
+            configuration.Routes.MapHttpRoute(&#xD;
+                "Api Default", "api/{controller}/{id}",&#xD;
+                new {id = RouteParameter.Optional});&#xD;
+        }&#xD;
+    }</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=356CE5547175F94EB86E873B10C1F1C2/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=356CE5547175F94EB86E873B10C1F1C2/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=356CE5547175F94EB86E873B10C1F1C2/Categories/=Demo_002EWebApi/@EntryIndexedValue">Demo.WebApi</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=356CE5547175F94EB86E873B10C1F1C2/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=356CE5547175F94EB86E873B10C1F1C2/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=356CE5547175F94EB86E873B10C1F1C2/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=356CE5547175F94EB86E873B10C1F1C2/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3A720B448EA82409C1A7392FE29C945/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3A720B448EA82409C1A7392FE29C945/Shortcut/@EntryValue">WebApi.SelfHost.CreateSelfHost</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3A720B448EA82409C1A7392FE29C945/Text/@EntryValue">            var runtime = new SelfHostRuntime();&#xD;
+&#xD;
+            runtime.Host();</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3A720B448EA82409C1A7392FE29C945/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3A720B448EA82409C1A7392FE29C945/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3A720B448EA82409C1A7392FE29C945/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3A720B448EA82409C1A7392FE29C945/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3A720B448EA82409C1A7392FE29C945/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3A720B448EA82409C1A7392FE29C945/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String></wpf:ResourceDictionary>

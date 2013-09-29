@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Home Page";  
+}
+
+@section scripts
+{
+    <script src="~/ViewModels/ModelBindingViewModel.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            var vm = new Demo.ModelBindingViewModel();
+
+            var element = $("#demo-documentBody")[0];
+            ko.applyBindings(vm, element);
+        })();
+    </script>    
+
+}
+<div class="row">
+    <div id="demo-documentBody" class="span12">
+        <div data-bind="visible: ShowBindingLogic">
+            <h2>Model Binding</h2>
+            <div>
+                <span data-bind="text: FirstName"></span>
+                <br /> 
+                <span data-bind="text: LastName"></span>
+                <br /> 
+                <span data-bind="text: FullName" style="color: red"></span>
+                <br />
+                <input type="button" value="Model Bind" data-bind="click: bindingPost" />
+            </div>
+        </div>
+<br/>
+        <div data-bind="visible: ShowOverBindingLogic">
+            <h2>Model Binding -- Over Binding</h2>
+            <div>
+                <span data-bind="text: FirstName"></span>
+                <br /> 
+                <span data-bind="text: LastName"></span>
+                <br /> 
+                <span data-bind="text: MiddleName"></span>
+                <br /> 
+                <span data-bind="text: FullName" style="color: red"></span>
+                <br />
+                <input type="button" value="Model Bind" data-bind="click: overBindingPost" />
+            </div>
+        </div>
+<br/>
+        <div data-bind="visible: ShowBindingValidationLogic">
+            <h2>Model Binding -- Validation</h2>
+            <div>
+                <span data-bind="text: FirstName"></span>
+                <br /> 
+                <span data-bind="text: LastName"></span>
+                <br />
+                <input type="text" data-bind="value: Age"/>
+                <br /> 
+                 <span data-bind="text: FullName" style="color: red"></span>
+                <br />
+                <input type="button" value="Model Bind" data-bind="click: validationBindingPost" />
+            </div>
+        </div>
+    </div>
+
+</div>
