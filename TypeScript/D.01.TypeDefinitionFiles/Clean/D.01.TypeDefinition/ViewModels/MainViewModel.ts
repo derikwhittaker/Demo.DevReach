@@ -1,3 +1,4 @@
+/// <reference path="../Scripts/typings/knockout/knockout.d.ts" />
 
 module TypeDefinitions {
     export class MainViewModel {

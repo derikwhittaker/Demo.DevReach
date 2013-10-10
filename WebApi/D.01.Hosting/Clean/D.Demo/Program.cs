@@ -1,12 +1,49 @@
-﻿namespace D.Demo
+﻿using System;
+using System.Web.Http;
+using System.Web.Http.SelfHost;
+
+namespace D.Demo
 {
     class Program
     {
         static void Main(string[] args)
         {
-            
+            var runtime = new SelfHostRuntime();
+
+            runtime.Host();
         }
     }
 
+    public class AwesomeController : ApiController
+    {
+        public string GetStatus()
+        {
+            return "Your Awesome";
+        }
+    }
 
+    public class SelfHostRuntime
+    {
+        public void Host()
+        {
+            var config = new HttpSelfHostConfiguration("http://localhost:8888");
+            ConfigureRoutes(config);
+
+            using (var server = new HttpSelfHostServer(config))
+            {
+                Console.WriteLine("Starting Web Api Host");
+                Console.WriteLine("Listening @ {0}", config.BaseAddress);
+                server.OpenAsync().Wait();
+
+                Console.ReadLine();
+            }
+        }
+
+        private void ConfigureRoutes(HttpSelfHostConfiguration configuration)
+        {
+            configuration.Routes.MapHttpRoute(
+                "Api Default", "api/{controller}/{id}",
+                new {id = RouteParameter.Optional});
+        }
+    }
 }

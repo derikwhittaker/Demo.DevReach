@@ -9,6 +9,8 @@ namespace D.Actions
         {
             config.MapHttpAttributeRoutes();
 
+            //config.Formatters.Remove(config.Formatters.XmlFormatter);
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{action}/{id}",

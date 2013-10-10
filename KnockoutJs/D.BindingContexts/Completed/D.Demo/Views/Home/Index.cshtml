@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Home Page";  
+}
+
+@section scripts
+{
+    <script src="~/ViewModels/MainViewModel.js"></script>
+
+    <script type="text/javascript">
+        var viewModel = new KO4Xaml.MainViewModel();
+
+        var element = $('#demo-documentBody')[0];
+        ko.applyBindings(viewModel, element);
+        
+    </script>    
+
+}
+
+<div class="hero-unit">
+    <h1>Knockout 4 the Xaml Developer</h1>
+</div>
+<div class="row">
+    <div id="demo-documentBody" class="span12">
+        <input type="button" value="Create Person" data-bind="click: addPerson" />
+        <div data-bind="foreach: People">
+            First Name: <span data-bind="text: FirstName"></span> <br/>
+            Last Name: <span data-bind="text: LastName"></span> <br/>
+            Age: <span data-bind="text: Age"></span> <br/>
+            <br />
+            <div data-bind="with: Address" >
+                Address: <span data-bind="text: Address"></span><br />
+                City: <span data-bind="text: City"></span><br />
+                State: <span data-bind="text: State"></span><br />
+                Zip Code: <span data-bind="text: Zip"></span><br />
+            </div>
+            <input type="button" value="Delete Address" data-bind="click: $root.deletePerson.bind($parent, $data)"/>
+            <br/>
+        </div>
+        @*        <div data-bind="with: Person" >
+            First Name: <span data-bind="text: FirstName"></span> <br/>
+            Last Name: <span data-bind="text: LastName"></span> <br/>
+            Age: <span data-bind="text: Age"></span> <br/>
+            <br />
+            <div data-bind="with: Address" >
+                Address: <span data-bind="text: Address"></span><br />
+                City: <span data-bind="text: City"></span><br />
+                State: <span data-bind="text: State"></span><br />
+                Zip Code: <span data-bind="text: Zip"></span><br />
+            </div>
+        </div>*@           
+        @*        <div data-bind="with: Person">
+            First Name: <span data-bind="text: FirstName"></span> <br/>
+            Last Name: <span data-bind="text: LastName"></span> <br/>
+            Age: <span data-bind="text: Age"></span> <br/>
+            <br />
+            <div data-bind="with: Address">
+                Address: <span data-bind="text: Address"></span><br />
+                City: <span data-bind="text: City"></span><br />
+                State: <span data-bind="text: State"></span><br />
+                Zip Code: <span data-bind="text: Zip"></span><br />
+            </div>
+        </div> *@  
+    </div>
+</div>

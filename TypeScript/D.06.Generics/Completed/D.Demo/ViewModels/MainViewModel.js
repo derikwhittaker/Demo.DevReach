@@ -1,4 +1,3 @@
-/// <reference path="../Scripts/typings/knockout/knockout.d.ts" />
 var DevReach;
 (function (DevReach) {
     var MainViewModel = (function () {
@@ -13,7 +12,7 @@ var DevReach;
 
             this.Animals.push({ type: 'Dog' });
 
-            //this.Dogs.push(new Cat());
+            this.Dogs.push(new Cat());
             this.Dogs.push(new Dog());
         };
         return MainViewModel;
@@ -29,6 +28,7 @@ var DevReach;
 
     var Cat = (function () {
         function Cat() {
+            this.foo = "";
         }
         return Cat;
     })();

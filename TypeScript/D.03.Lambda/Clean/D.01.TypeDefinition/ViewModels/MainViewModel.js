@@ -14,6 +14,11 @@ var TypeDefinitions;
             this.Items.push(new ToDoItem("Item 6", "Description 6"));
         }
         MainViewModel.prototype.filter = function () {
+            var filtered = _.filter(this.Items(), function (item) {
+                return item.Name() == "Item 2";
+            });
+
+            this.FilteredItems(filtered);
         };
 
         MainViewModel.prototype.reset = function () {

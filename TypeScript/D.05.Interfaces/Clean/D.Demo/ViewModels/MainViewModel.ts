@@ -15,7 +15,7 @@ module DevReach {
 
         public SpeakerType: KnockoutObservable<Speakers> = ko.observable(Speakers.Unknown);
         
-        public createSpeaker() {
+        public createSpeaker() :ISpeaker {
             switch (this.SpeakerType()) {
                 case Speakers.Dog:
                     return new Dog();
@@ -29,13 +29,17 @@ module DevReach {
         }
 
         public run() {
-            var speaker = this.createSpeaker();
+            var speaker : ISpeaker = this.createSpeaker();
             
             speaker.speak();
         }
     }
 
-    export class Mammal  {
+    export interface ISpeaker {
+        speak(): void;
+    }
+
+    export class Mammal implements ISpeaker  {
         public saysWhat: string = "I'm a mammal";
         
         public speak() {
@@ -46,7 +50,7 @@ module DevReach {
     export class Dog extends Mammal {
 
         constructor() {
-            super()
+            super();
 
             this.saysWhat = "I'm a Dog";
         }
@@ -55,7 +59,7 @@ module DevReach {
     export class Wolf extends Mammal {
 
         constructor() {
-            super()
+            super();
 
             this.saysWhat = "I'm a Wolf";
         }
@@ -64,7 +68,7 @@ module DevReach {
     export class Dolphin extends Mammal {
 
         constructor() {
-            super()
+            super();
 
             this.saysWhat = "I'm a Dolphin";
         }

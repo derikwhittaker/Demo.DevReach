@@ -1,0 +1,16 @@
+1) initial HTML
+        <div data-bind="foreach: ToDoItems">
+            <div>
+                <span style="font-size: 16px;" data-bind="text: Name"></span>
+                <span style="font-size: 16px;" data-bind="text: Status></span>
+            </div>
+        </div>
+
+2)
+
+, attr: { class: StatusStyle}
+
+
+3)
+
+, style: { color: StatusStyle() == 'overdue-status' ? 'red' : 'purple'

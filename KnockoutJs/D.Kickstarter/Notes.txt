@@ -1,0 +1,42 @@
+Kick Starter Demo 
+
+
+1) 
+        public FirstObservable: KnockoutObservable<string> = ko.observable("Say Hello to Knockout");
+        public FirstObservableCollection: KnockoutObservableArray<ToDo> = ko.observableArray([]);
+        public FirstComputed: KnockoutComputed<string>;
+
+2) 
+        constructor() {
+            this.FirstObservableCollection.push(new ToDo("Item 1", "Message 1"));
+            this.FirstObservableCollection.push(new ToDo("Item 2", "Message 2"));
+            this.FirstObservableCollection.push(new ToDo("Item 3", "Message 3"));
+
+            this.FirstComputed = ko.computed(() => {
+                return this.FirstObservable() + " From Computed";
+            });
+        }
+
+3)
+        var viewModel = new KO4Xaml.MainViewModel();
+
+        var element = $('#demo-documentBody')[0];
+        ko.applyBindings(viewModel, element);
+
+4)
+        <h2>First Observable</h2>
+        <input type="text" data-bind="value: FirstObservable"/>
+        
+        <h2>First Computed</h2>
+        <span data-bind="text: FirstComputed"></span>
+        
+        <h2>First Observable Collection</h2>
+        <div data-bind="foreach: FirstObservableCollection">
+            <div>
+                <span data-bind="text: Title"></span>
+                <span data-bind="text: Message"></span>    
+            </div>
+        </div>
+
+5) 
+	valueUpdate: 'afterkeydown'

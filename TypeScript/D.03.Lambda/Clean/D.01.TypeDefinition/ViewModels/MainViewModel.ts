@@ -19,6 +19,11 @@ module TypeDefinitions {
         }
 
         public filter() {
+            var filtered = _.filter(this.Items(), (item) => {
+                return item.Name() == "Item 2";
+            });
+
+            this.FilteredItems(filtered);
         }
 
         public reset() {

@@ -1,6 +1,9 @@
 ﻿using System.Web.Http;
+using D.Actions.Filters;
+
 namespace D.Actions.Controllers
 {
+
     
     public class AwesomeController : ApiController
     {
@@ -10,6 +13,7 @@ namespace D.Actions.Controllers
             return "Your Awesome";
         }
 
+        [DemoActionFilter]
         [HttpGet]
         public string Status(string id)
         {

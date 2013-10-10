@@ -1,4 +1,5 @@
 ﻿using System.Web.Http;
+using D.Actions.Filters;
 
 namespace D.Actions
 {
@@ -8,7 +9,8 @@ namespace D.Actions
         {
 
             config.MapHttpAttributeRoutes();
-            
+
+            //config.Filters.Add(new DemoActionFilter());
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

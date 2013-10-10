@@ -11,7 +11,7 @@ var Demo;
             this.Age = ko.observable(0);
             this.ShowBindingLogic = ko.observable(false);
             this.ShowOverBindingLogic = ko.observable(false);
-            this.ShowBindingValidationLogic = ko.observable(false);
+            this.ShowBindingValidationLogic = ko.observable(true);
         }
         ModelBindingViewModel.prototype.bindingPost = function () {
             var _this = this;
@@ -34,7 +34,7 @@ var Demo;
             var url = "http://localhost:30976/api/Awesome/OverModelBinding";
 
             var model = {
-                FirstName: this.FirstName(),
+                FName: this.FirstName(),
                 LastName: this.LastName(),
                 MiddleName: this.MiddleName()
             };

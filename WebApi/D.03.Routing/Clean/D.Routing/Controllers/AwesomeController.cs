@@ -16,8 +16,16 @@ namespace D.Actions.Controllers
         {
             return string.Format("Status of {0} was provided", id);
         }
+    }
 
-        
+    public class StatusController : ApiController
+    {
+
+        [HttpGet("api/teams/{teamId}/status")]
+        public string TeamStatus(int teamId)
+        {
+            return string.Format("Team {0} status is 'something'", teamId);
+        }
     }
 
 }

@@ -1,3 +1,4 @@
+/// <reference path="../Scripts/typings/knockout/knockout.d.ts" />
 var TypeDefinitions;
 (function (TypeDefinitions) {
     var MainViewModel = (function () {

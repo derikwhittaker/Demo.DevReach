@@ -1,0 +1,38 @@
+Data Context Demo
+
+Initial HTML
+	<input type="button" value="Create Person" data-bind="click: addPerson" />
+        <div data-bind="foreach: People">
+            First Name: <span data-bind="text: FirstName"></span> <br/>
+            Last Name: <span data-bind="text: LastName"></span> <br/>
+            Age: <span data-bind="text: Age"></span> <br/>
+            <br />
+            <div >
+                Address: <span data-bind="text: Address().Address"></span><br />
+                City: <span data-bind="text: Address().City"></span><br />
+                State: <span data-bind="text: Address().State"></span><br />
+                Zip Code: <span data-bind="text: Address().Zip"></span><br />
+            </div>
+        </div>
+
+2) final HTML
+<div data-bind="foreach: People">
+            First Name: <span data-bind="text: FirstName"></span> <br/>
+            Last Name: <span data-bind="text: LastName"></span> <br/>
+            Age: <span data-bind="text: Age"></span> <br/>
+            <br />
+            <div data-bind="with: Address" >
+                Address: <span data-bind="text: Address"></span><br />
+                City: <span data-bind="text: City"></span><br />
+                State: <span data-bind="text: State"></span><br />
+                Zip Code: <span data-bind="text: Zip"></span><br />
+            </div>
+            <input type="button" value="Delete Address" data-bind="click: $root.deletePerson.bind($parent, $data)"/>
+            <br/>
+        </div>
+
+1) delete button
+<input type="button" value="Delete Address" data-bind=""/>
+
+2) wire the bind
+click: $root.deletePerson.bind($parent, $data)

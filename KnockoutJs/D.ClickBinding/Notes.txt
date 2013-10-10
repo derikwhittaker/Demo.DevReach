@@ -1,0 +1,42 @@
+Click Binding Demo
+
+Demo 1 Stpes
+1)
+
+        public FirstName: KnockoutObservable<string> = ko.observable("");
+        public Message: KnockoutObservable<string> = ko.observable("");
+
+        public save() {
+            this.Message("Save was clicked");
+        }
+
+2)
+        <input type="text" data-bind="value: FirstName"/>
+        <span data-bind="text: Message"></span>
+        
+        <br/>
+        <input type="button" value="Save" data-bind="" />
+
+Demo 2 Steps
+3)
+        public IsValid: KnockoutComputed<boolean>;
+
+        constructor() {
+
+            this.IsValid = ko.computed(() => {
+                return this.FirstName().length > 0;
+            });
+
+        }
+
+Demo 3 Steps
+4) 
+        public saveWithParms(data) {
+			console.log(data);   
+        }
+
+5) 
+        <input type="button" value="Save W/ Parms" data-bind="click: saveWithParms" />
+
+
+        <input type="button" value="Save W/ Parms" data-bind="click: saveWithParms.bind($data, FirstName())" />

@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";  
+}
+
+@section scripts
+{
+    <script src="~/ViewModels/MainViewModel.js"></script>
+
+    <script type="text/javascript">
+
+        (function() {
+            var viewModel = new KO4Xaml.MainViewModel();
+
+            var element = $('#demo-documentBody')[0];
+            ko.applyBindings(viewModel, element);
+        })();
+
+    </script>    
+
+}
+
+<div class="hero-unit">
+    <h1>Knockout 4 the Xaml Developer</h1>
+</div>
+<div class="row">
+    <div id="demo-documentBody" class="span12">
+        <h2>First Observable</h2>
+        <input type="text" data-bind="value: FirstObservable"/>
+        
+        <h2>First Computed</h2>
+        <span data-bind="text: FirstComputed"></span>
+        
+        <h2>First Observable Collection</h2>
+        <div data-bind="foreach: FirstObservableCollection">
+            <div>
+                <span data-bind="text: Title"></span>
+                <span data-bind="text: Message"></span>    
+            </div>
+        </div>
+    </div>
+</div>

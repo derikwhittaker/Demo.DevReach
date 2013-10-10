@@ -1,37 +1,12 @@
-    export interface ISpeaker{
-        speak(): void;
-    }
+        public Animals = new Array();
+        public Dogs = new Array<Dog>();
+        public Cats = new Array<Cat>();
 
 
-    export class Mammal implements ISpeaker {
-        public saysWhat: string = "I'm a mammal";
-        
-        public speak() {
-            console.log("Mammal says " + this.saysWhat );
-        }
-    }
+            this.Animals.push(new Dog());
+            this.Animals.push(new Cat());
 
+            this.Animals.push({type: 'Dog' });
 
-
-    export class Bird implements ISpeaker{
-
-        public speak() {
-            console.log("Bird says chirp chirp");
-        }
-    }
-
-        public createSpeaker() : ISpeaker {
-            switch (this.SpeakerType()) {
-                case Speakers.Dog:
-                    return new Dog();
-                case Speakers.Wolf:
-                    return new Wolf();
-                case Speakers.Dolphin:
-                    return new Dolphin();
-                case Speakers.Bird:
-                    return new Bird();
-            }
-
-            return new Mammal();
-        }
-
+            //this.Dogs.push(new Cat());
+            this.Dogs.push(new Dog());

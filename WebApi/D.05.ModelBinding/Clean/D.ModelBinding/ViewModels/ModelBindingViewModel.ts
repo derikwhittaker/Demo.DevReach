@@ -12,7 +12,7 @@ module Demo {
 
         public ShowBindingLogic: KnockoutObservable<boolean> = ko.observable(false);
         public ShowOverBindingLogic: KnockoutObservable<boolean> = ko.observable(false);
-        public ShowBindingValidationLogic: KnockoutObservable<boolean> = ko.observable(false);
+        public ShowBindingValidationLogic: KnockoutObservable<boolean> = ko.observable(true);
 
         bindingPost() {
             var url = "http://localhost:30976/api/Awesome/ModelBinding";
@@ -35,7 +35,7 @@ module Demo {
             var url = "http://localhost:30976/api/Awesome/OverModelBinding";
 
             var model = {
-                FirstName: this.FirstName(),
+                FName: this.FirstName(),
                 LastName: this.LastName(),
                 MiddleName: this.MiddleName()
             };

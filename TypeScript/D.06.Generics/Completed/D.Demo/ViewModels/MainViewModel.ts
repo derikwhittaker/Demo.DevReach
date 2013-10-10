@@ -1,4 +1,3 @@
-/// <reference path="../Scripts/typings/knockout/knockout.d.ts" />
 
 module DevReach {
 
@@ -15,7 +14,7 @@ module DevReach {
 
             this.Animals.push({type: 'Dog' });
 
-            //this.Dogs.push(new Cat());
+            this.Dogs.push(new Cat());
             this.Dogs.push(new Dog());
         }
     }
@@ -25,5 +24,6 @@ module DevReach {
     }
 
     export class Cat{
+        public foo = "";
     }
 }

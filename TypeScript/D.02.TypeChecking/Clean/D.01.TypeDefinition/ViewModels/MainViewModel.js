@@ -9,6 +9,8 @@ var TypeDefinitions;
         };
 
         MainViewModel.prototype.handleClick = function () {
+            var mammal = new Mammal("Dog");
+            mammal.walk(new Steps(22));
         };
         return MainViewModel;
     })();
@@ -19,9 +21,18 @@ var TypeDefinitions;
             this.mammalType = type;
         }
         Mammal.prototype.walk = function (steps) {
-            console.log("Walking the " + this.mammalType + " " + steps + " steps");
+            console.log("Walking the " + this.mammalType + " " + steps.Steps + " steps");
         };
         return Mammal;
     })();
     TypeDefinitions.Mammal = Mammal;
+
+    var Steps = (function () {
+        function Steps(steps) {
+            this.Steps = 0;
+            this.Steps = steps;
+        }
+        return Steps;
+    })();
+    TypeDefinitions.Steps = Steps;
 })(TypeDefinitions || (TypeDefinitions = {}));

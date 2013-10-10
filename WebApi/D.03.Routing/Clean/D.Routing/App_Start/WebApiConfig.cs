@@ -12,6 +12,15 @@ namespace D.Actions
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
+                name: "LegacyApiRoute",
+                routeTemplate: "api/Legacy/SetMyStatus/{id}",
+                defaults: new {controller = "Awesome", action = "status", id = RouteParameter.Optional}
+                );
+
+
+
+
+            config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }

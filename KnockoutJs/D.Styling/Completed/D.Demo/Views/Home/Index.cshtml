@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Home Page";  
+}
+
+@section scripts
+{
+    <script src="~/ViewModels/MainViewModel.js"></script>
+
+    <script type="text/javascript">
+        var viewModel = new KO4Xaml.MainViewModel();
+
+        var element = $('#demo-documentBody')[0];
+        ko.applyBindings(viewModel, element);
+        
+    </script>    
+
+}
+
+<style>
+    
+    .overdue-status {
+        color: red;
+    }
+
+    .normal-status {
+        color: green;
+    }
+
+</style>
+
+<div class="hero-unit">
+    <h1>Knockout 4 the Xaml Developer</h1>
+</div>
+<div class="row">
+    <div id="demo-documentBody" class="span12">        
+        <div data-bind="foreach: ToDoItems">
+            <div>
+                <span style="font-size: 16px;" data-bind="text: Name"></span>
+                <span style="font-size: 16px;" data-bind="text: Status, attr: { class: StatusStyle}" ></span>
+                <span style="font-size: 16px;" data-bind="text: Status, style: { color: StatusStyle() == 'overdue-status' ? 'red' : 'purple' }" ></span>
+            </div>
+        </div>
+    </div>
+</div>

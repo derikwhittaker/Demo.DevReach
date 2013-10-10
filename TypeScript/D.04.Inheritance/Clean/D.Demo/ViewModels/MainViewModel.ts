@@ -19,6 +19,14 @@ module DevReach {
         }
 
         public createMammal() {
+            switch (this.MammalType()) {
+                case MammalType.Dog:
+                    return new Dog();
+                case MammalType.Wolf:
+                    return new Wolf();
+                case MammalType.Dolphin:
+                    return new Dolphin();
+            }
 
             return new Mammal();
         }
@@ -35,6 +43,33 @@ module DevReach {
         
         public speak() {
             console.log("Mammal says " + this.saysWhat );
+        }
+    }
+
+    export class Dog extends Mammal {
+
+        constructor() {
+            super();
+
+            this.saysWhat = "I'm a Dog";
+        }
+    }
+
+    export class Wolf extends Mammal {
+
+        constructor() {
+            super();
+
+            this.saysWhat = "I'm a Wolf";
+        }
+    }
+
+    export class Dolphin extends Mammal {
+
+        constructor() {
+            super();
+
+            this.saysWhat = "I'm a Dolphin";
         }
     }
 

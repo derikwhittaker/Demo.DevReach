@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Home Page";  
+}
+
+@section scripts
+{
+    <script src="~/ViewModels/MainViewModel.js"></script>
+
+    <script type="text/javascript">
+        var viewModel = new KO4Xaml.MainViewModel();
+
+        var element = $('#demo-documentBody')[0];
+        ko.applyBindings(viewModel, element);
+        
+    </script>    
+
+}
+
+<div class="hero-unit">
+    <h1>Knockout 4 the Xaml Developer</h1>
+</div>
+<div class="row">
+    <div id="demo-documentBody" class="span12">        
+        <input type="text" data-bind="value: FirstName" />
+        <span data-bind="text: Message"></span>
+        
+        <br/>
+        <input type="button" value="Save" data-bind="click: save.bind($data, FirstName())" />
+    </div>
+</div>
